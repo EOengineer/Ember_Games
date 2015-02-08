@@ -1,0 +1,45 @@
+@import "settings";
+
+@import "foundation";
+
+body {
+  background-color: #FDF6E3;
+  }
+
+  .project-icons {
+    width: 30%;
+    min-width: 250px;
+    height: 200px;
+    background-color: #efa510;
+    border: 1px solid #2AA198;
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+  .services-container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service-container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image {
+    height: 200px;
+    width: 200px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .logo {
+    height: 50%;
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
