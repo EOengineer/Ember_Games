@@ -1,0 +1,5 @@
+<h2>Games</h2>
+{{#each project in model}}
+ <h3>{{link-to project.name 'projects.show' project}}</h3>
+ <p>{{project.description}}</p>
+{{/each}}
