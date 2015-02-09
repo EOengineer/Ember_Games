@@ -1,6 +1,6 @@
 class Api::V1::CharactersController < ApplicationController
   def index
-    @characters = Character.all
+    @characters = Character.where(project_id: params[:project_id])
 
     render json: @characters
   end
