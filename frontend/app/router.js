@@ -6,8 +6,16 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('home', { path: '/'});
+  this.route('about');
+  this.route('contact');
+  this.route('help');
   this.resource('projects', function() {
-    this.route('show', { path: '/:project_id'});
+    this.route('show', { path: '/:project_id'}, function() {
+      this.resource('characters', function() {
+        this.route('show', { path: '/:character_id'});
+      });
+    });
   });
 });
 
