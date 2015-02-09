@@ -1,0 +1,11 @@
+
+<div class='services-container text-center'>
+<h2 class='text-center'>Games</h2>
+  {{#each character in model}}
+    <div>
+      <ul>
+        {{link-to character.name 'characters.show' character tagName="li" class='project-icons'}}
+      </ul>
+     </div>
+  {{/each}}
+</div>
